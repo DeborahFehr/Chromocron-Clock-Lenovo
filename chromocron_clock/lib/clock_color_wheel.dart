@@ -34,7 +34,7 @@ class _ColorClockWheel extends State<ColorClockWheel> {
     int seconds = widget.time.second;
 
     Color currentHourColor = Globals.colorList[hour];
-    Color nextHourColor = Globals.colorList[hour + 1 % 12];
+    Color nextHourColor = Globals.colorList[(hour + 1) % 12];
 
     /// Calculate the transition value.
     double transition = (minute / 60) + (seconds / 3600);

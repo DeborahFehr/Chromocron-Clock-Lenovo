@@ -29,7 +29,7 @@ class _BackgroundColor extends State<BackgroundColor> {
     double transition = (minute / 60) + (seconds / 3600);
 
     Color currentHourColor = Globals.colorList[hour];
-    Color nextHourColor = Globals.colorList[hour + 1 % 12];
+    Color nextHourColor = Globals.colorList[(hour + 1) % 12];
 
     /// Light mode: brighten color,
     /// Dark mode: darken color
